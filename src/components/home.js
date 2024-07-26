@@ -22,14 +22,14 @@ const HomePage= ()=> {
   useEffect(() => {
     const loadGames = async () => {
       try {
-        // "proxy": "https://www.freetogame.com",
-        const apibody =  "https://www.freetogame.com";
+        const apibody = "https://free-to-play-games-database.p.rapidapi.com";
         const api = gameCategory==='pc'? `${apibody}/api/games?platform=pc`: 
          (gameCategory ? `${apibody}/api/games?category=${gameCategory}` : `${apibody}/api/games`);
         const response = await fetch(api, {
           method: 'GET',
           headers: {
-            'Content-Type': 'application/json',
+            "x-rapidapi-host":"free-to-play-games-database.p.rapidapi.com",
+            "x-rapidapi-key":"84764e351emsh771ac68700c8df5p1ff18fjsn5871cb1a2b93"
           },
         });
         const data = await response.json();     
