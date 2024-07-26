@@ -1,5 +1,3 @@
-
-
 import React, { useEffect, useState } from 'react';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import GamesItems from './gamesItems';
@@ -8,11 +6,11 @@ import { useLocation } from 'react-router-dom';
 const useQuery = () => {
     return new URLSearchParams(useLocation().search);
   };
-  
 
-const HomePage= ()=> {
-    const query = useQuery();
-    const gameCategory = query.get('category');
+const HomePage= (props)=> {
+  const {apiKey} = props;
+  const query = useQuery();
+  const gameCategory = query.get('category');
     
   const [games, setGames] = useState([]);
   const [visibleGames, setVisibleGames] = useState([]);
@@ -29,7 +27,7 @@ const HomePage= ()=> {
           method: 'GET',
           headers: {
             "x-rapidapi-host":"free-to-play-games-database.p.rapidapi.com",
-            "x-rapidapi-key":"YOUR_API_KEY",
+            "x-rapidapi-key": apiKey,
           },
         });
         const data = await response.json();     
@@ -43,7 +41,7 @@ const HomePage= ()=> {
     };
 
     loadGames();
-  }, [gameCategory]);
+  }, [gameCategory,apiKey]);
 
   const loadMoreGames = () => {
     const currentLength = visibleGames.length;
@@ -60,10 +58,9 @@ const HomePage= ()=> {
         next={loadMoreGames}
         hasMore={hasMore}
         loader={<p>Loading...</p>}
-        // loader={<img src='eye_search.gif' height={80}/>}
         endMessage={<p>----------------------------------------------</p>}
       >
-        <div className='row'>
+        <div className='row mx-2'>
           
         {visibleGames.map((game) => (
             <div className='col-md-3 my-2' key={game.id}>

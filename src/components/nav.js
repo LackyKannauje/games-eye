@@ -45,7 +45,7 @@ export default function NavBar() {
             </li>
           </ul>
           <form className="d-flex" onSubmit={handleSearchSubmit} role="search">
-            <input className="form-control me-2" type="search" name='search-category' placeholder="Search Games" aria-label="Search" value={searchValue} onChange={handleSearchInput} />
+            <input className="form-control me-2" type="search" name='search-category' placeholder="Search Category" aria-label="Search" value={searchValue} onChange={handleSearchInput} />
             <button className="btn btn-outline-success" type="submit">Search</button>
           </form>
         </div>
