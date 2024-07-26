@@ -29,7 +29,7 @@ const HomePage= ()=> {
           method: 'GET',
           headers: {
             "x-rapidapi-host":"free-to-play-games-database.p.rapidapi.com",
-            "x-rapidapi-key":"84764e351emsh771ac68700c8df5p1ff18fjsn5871cb1a2b93"
+            "x-rapidapi-key":"YOUR_API_KEY",
           },
         });
         const data = await response.json();     
