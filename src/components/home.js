@@ -22,8 +22,10 @@ const HomePage= ()=> {
   useEffect(() => {
     const loadGames = async () => {
       try {
-        const api = gameCategory==='pc'? `/api/games?platform=pc`: 
-         (gameCategory ? `/api/games?category=${gameCategory}` : '/api/games');
+        // "proxy": "https://www.freetogame.com",
+        const apibody =  "https://www.freetogame.com";
+        const api = gameCategory==='pc'? `${apibody}/api/games?platform=pc`: 
+         (gameCategory ? `${apibody}/api/games?category=${gameCategory}` : `${apibody}/api/games`);
         const response = await fetch(api, {
           method: 'GET',
           headers: {
