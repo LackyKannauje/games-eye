@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# 🎮 GamesEye
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**GamesEye** is a web platform that allows users to explore and filter games by categories, offering real-time data loading and a smooth, responsive experience with engaging animations. The platform is optimized for fast performance through efficient data-fetching techniques, including conditional API calls and infinite scrolling.
 
-## Available Scripts
+## 🖥️ About the Website
+- Explore a wide variety of games, categorized by platform and genre.
+- Infinite scrolling with seamless real-time data fetching.
+- Filter games by categories such as:
+  - Home
+  - PC Games
+  - Action
+  - Multiplayer
+  - Mobile Games
+  - Shooter
+- Optimized for performance with minimal load times through conditional API calls.
+- Clean and responsive UI with smooth animations for a modern experience.
 
-In the project directory, you can run:
+## 🧑‍💻 Tech Stack
+- **Frontend**: React.js, Bootstrap
+- **APIs**: REST APIs for fetching game data in real-time (no API key required)
 
-### `npm start`
+## 🚀 Features
+- 🔍 **Search Functionality**: Easily search for your favorite games.
+- 📜 **Infinite Scrolling**: Automatically load more games as you scroll, ensuring a seamless experience.
+- 🎨 **Modern UI**: Responsive design with smooth animations.
+- 📱 **Multi-Platform Support**: Browse games across different platforms like PC and Mobile.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📂 Routes
+- **Home**: The main page showcasing popular games and categories.
+- **PC Games**: Filter and explore games available on PC.
+- **Action**: Explore action-packed games.
+- **Multiplayer**: Browse multiplayer games for both PC and mobile.
+- **Mobile Games**: Find games designed for mobile platforms.
+- **Shooter**: Discover shooter games across platforms.
+- **Search**: Use the search bar to quickly find games based on titles or genres.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🖼️ Screenshots
 
-### `npm test`
+### 1. Home Page
+![Home Page]![Screenshot (398)](https://github.com/user-attachments/assets/d364626a-7f5d-41e0-b9fa-350212b1888c)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### 2. Game Search
+![Game Search]![Screenshot (400)](https://github.com/user-attachments/assets/977b9342-93e7-450a-8536-8e31c3c9de4d)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 3. Category Filter (PC Games)
+![PC Games]![{D4B16C19-78C0-458E-B983-0E43292F742B}](https://github.com/user-attachments/assets/f6ebf1f7-92bf-4a80-9d29-ba3ebd4e8695)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### 4. Game Details
+![Game Details]![{8421173C-0765-40CA-8B7A-313FD46BE661}](https://github.com/user-attachments/assets/6bd5b1c1-e970-4a59-9c10-976f932b74d7)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠️ Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Follow these steps to run the project on your local machine.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repository
+2. Navigate to the project directory
+3. Install dependencies
+4. Start the development server
+5. Open the application in your browser at http://localhost:3000
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Key Points:
+- **Tech Stack**: React.js, REST APIs, Bootstrap (No API key or database integration).
+- **Features**: Infinite scrolling, search, and various game categories.
+- **Routes**: Home, PC Games, Action, Multiplayer, Mobile Games, Shooter.
+- **Optimizations**: Conditional API calls for better performance.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
